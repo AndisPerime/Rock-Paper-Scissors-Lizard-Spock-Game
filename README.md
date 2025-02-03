@@ -39,11 +39,26 @@ One of the requirements of the project is to implement gradual difficulty, so ch
 1. When the page is fully loaded, select the level (variables and rounds).
 2. Press start button 
 3. Select one variable per round
+4. Once the round count is 0 and you know the final score, you can restart the game
 
+## Rules
 
+Each round there's an outcome according to the rules below: Either there's a winner and a loser or else the result can be a draw if the same variable is picked by both players.
 
-## Usage
-Explain how to play the game and any commands or controls.
+These are the rules for the game:
+
+- Scissors cuts Paper
+- Paper covers Rock
+- Rock crushes Lizard
+- Lizard poisons Spock
+- Spock smashes Scissors
+- Scissors decapitates Lizard
+- Lizard eats Paper
+- Paper disproves Spock
+- Spock vaporizes Rock
+- (and as it always has) Rock crushes Scissors
+
+## Use of AI
 
 ## Contributors
 - Person 1
