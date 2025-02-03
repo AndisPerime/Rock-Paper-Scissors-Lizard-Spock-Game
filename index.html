@@ -5,31 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors Lizard Spock</title>
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <script src="assets/js/game.js"></script>
 </head>
 <body>
     <header>
-        <div>
-            <h1>Header</h1>
-        </div>
-    </header>
-    <main>
-        <div>
-            <h1>Content</h1>
-            <div>
-                <img src="assets/image/musician.png" alt="">
+        <h1>Rock Paper Scissors Lizard Spock</h1>
+        <div class="scoreboard">
+            <div class="score">
+                <p>You: <span id="user-score">0</span></p>
+            </div>
+            <div class="score">
+                <p>Bang: <span id="computer-score">0</span></div>
             </div>
         </div>
-    </main>
-    <div class="card-footer">
-        <div class="row flex-spaces">
-        <button type="button" id="rock">Rock</button>
-        <button type="button" id="paper">Paper</button>
-        <button type="button" id="scissors">Scissors</button>
-        <button type="button" id="lizard">Lizard</button>
-        <button type="button" id="spock">Spock</button>
+    </header>
+
+    <main>
+        <div class="game-area">
+            <div class="choices">
+                <div class="choice">
+                    <h2>Your Choice</h2>
+                    <img id="user-choice" src="assets/images/question.png" alt="Your choice">
+                </div>
+                <div class="choice">
+                    <h2>Bang's Choice</h2>
+                    <img id="computer-choice" src="assets/images/question.png" alt="Computer's choice">
+                </div>
+            </div>
+            <div id="result">Choose your move!</div>
         </div>
-    </div>
+
+        <div class="controls">
+            <button class="choice-btn" data-choice="rock">
+                <img src="assets/images/rock.png" alt="Rock">
+                Rock
+            </button>
+            <button class="choice-btn" data-choice="paper">
+                <img src="assets/images/paper.png" alt="Paper">
+                Paper
+            </button>
+            <button class="choice-btn" data-choice="scissors">
+                <img src="assets/images/scissors.png" alt="Scissors">
+                Scissors
+            </button>
+            <button class="choice-btn" data-choice="lizard">
+                <img src="assets/images/lizard.png" alt="Lizard">
+                Lizard
+            </button>
+            <button class="choice-btn" data-choice="spock">
+                <img src="assets/images/spock.png" alt="Spock">
+                Spock
+            </button>
+        </div>
+
+        <button id="reset" onclick="resetGame()">Reset Game</button>
+    </main>
+
+    <script src="assets/js/game.js"></script>
 </body>
 </html>
