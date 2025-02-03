@@ -9,57 +9,17 @@
 <body>
     <header>
         <h1>Rock Paper Scissors Lizard Spock</h1>
-        <div class="scoreboard">
-            <div class="score">
-                <p>You: <span id="user-score">0</span></p>
-            </div>
-            <div class="score">
-                <p>Bang: <span id="computer-score">0</span></div>
-            </div>
-        </div>
     </header>
 
+    <button onclick="window.open('game-window.html', 'Game', 'width=1200,height=900')">Play Game</button>
+    
     <main>
-        <div class="game-area">
-            <div class="choices">
-                <div class="choice">
-                    <h2>Your Choice</h2>
-                    <img id="user-choice" src="assets/images/question.png" alt="Your choice">
-                </div>
-                <div class="choice">
-                    <h2>Bang's Choice</h2>
-                    <img id="computer-choice" src="assets/images/question.png" alt="Computer's choice">
-                </div>
-            </div>
-            <div id="result">Choose your move!</div>
-        </div>
-
-        <div class="controls">
-            <button class="choice-btn" data-choice="rock">
-                <img src="assets/images/rock.png" alt="Rock">
-                Rock
-            </button>
-            <button class="choice-btn" data-choice="paper">
-                <img src="assets/images/paper.png" alt="Paper">
-                Paper
-            </button>
-            <button class="choice-btn" data-choice="scissors">
-                <img src="assets/images/scissors.png" alt="Scissors">
-                Scissors
-            </button>
-            <button class="choice-btn" data-choice="lizard">
-                <img src="assets/images/lizard.png" alt="Lizard">
-                Lizard
-            </button>
-            <button class="choice-btn" data-choice="spock">
-                <img src="assets/images/spock.png" alt="Spock">
-                Spock
-            </button>
-        </div>
-
-        <button id="reset" onclick="resetGame()">Reset Game</button>
+        <h2>Rules</h2>
+        <p>Scissors cuts Paper, Paper covers Rock, Rock crushes Lizard, 
+        <b></b> poisons Spock, Spock smashes Scissors, Scissors decapitates Lizard,
+        <b></b> Lizard eats Paper, Paper disproves Spock, Spock vaporizes Rock, 
+        <b></b> as it always has, Rock crushes Scissors.</p>
     </main>
 
-    <script src="assets/js/game.js"></script>
 </body>
 </html>
