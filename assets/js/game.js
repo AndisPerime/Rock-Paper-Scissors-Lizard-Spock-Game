@@ -15,3 +15,7 @@ const images = {
     lizard: 'assets/images/lizard.png',
     spock: 'assets/images/spock.png'
 };
+
+// Score tracking
+let userScore = 0;
+let computerScore = 0;
