@@ -7,35 +7,55 @@ const gameRules = {
     spock: { beats: ['scissors', 'rock'] }
 };
 
-// Image paths for game choices
+// Image paths for game choices with error handling
 const images = {
-    rock: 'assets/images/rock.png',
-    paper: 'assets/images/paper.png',
-    scissors: 'assets/images/scissors.png',
-    lizard: 'assets/images/lizard.png',
-    spock: 'assets/images/spock.png'
+    rock: './assets/images/rock.png',
+    paper: './assets/images/paper.png',
+    scissors: './assets/images/scissors.png',
+    lizard: './assets/images/lizard.png',
+    spock: './assets/images/spock.png',
+    question: './assets/images/question.png'
 };
 
 // Score tracking
 let userScore = 0;
 let computerScore = 0;
+let tieScore = 0;
 
-// Get Bang's choice
+// Get computer choice
 function getBangChoice() {
     const choices = Object.keys(gameRules);
     return choices[Math.floor(Math.random() * choices.length)];
+}
+
+// Update result message
+function updateResult(message) {
+    const resultElement = document.getElementById('result');
+    if (resultElement) {
+        resultElement.textContent = message;
+    }
 }
 
 // Play round and determine winner
 function playRound(userChoice) {
     const bangChoice = getBangChoice();
     
-    // Update choice displays
-    document.getElementById('user-choice').src = images[userChoice];
-    document.getElementById('computer-choice').src = images[bangChoice];
+    // Update choice displays with error handling
+    const userImg = document.getElementById('user-choice');
+    const bangImg = document.getElementById('computer-choice');
+    
+    if (userImg && bangImg) {
+        userImg.src = images[userChoice] || images.question;
+        bangImg.src = images[bangChoice] || images.question;
+        userImg.style.width = '120px';
+        userImg.style.height = '120px';
+        bangImg.style.width = '120px';
+        bangImg.style.height = '120px';
+    }
     
     // Determine winner
     if (userChoice === bangChoice) {
+        tieScore++;
         updateResult("It's a tie!");
     } else if (gameRules[userChoice].beats.includes(bangChoice)) {
         userScore++;
@@ -48,30 +68,20 @@ function playRound(userChoice) {
     updateScoreboard();
 }
 
-// Update result message
-function updateResult(message) {
-    document.getElementById('result').textContent = message;
-}
-
 // Update scoreboard
 function updateScoreboard() {
     document.getElementById('user-score').textContent = userScore;
     document.getElementById('computer-score').textContent = computerScore;
+    document.getElementById('tie-score').textContent = tieScore;
 }
-
-// Event listeners for choice buttons
-document.querySelectorAll('.choice-btn').forEach(button => {
-    button.addEventListener('click', () => {
-        playRound(button.getAttribute('data-choice'));
-    });
-});
 
 // Reset game
 function resetGame() {
     userScore = 0;
     computerScore = 0;
+    tieScore = 0;
     updateScoreboard();
-    document.getElementById('result').textContent = 'Choose your move!';
-    document.getElementById('user-choice').src = 'assets/images/question.png';
-    document.getElementById('computer-choice').src = 'assets/images/question.png';
+    updateResult('Choose your move!');
+    document.getElementById('user-choice').src = images.question;
+    document.getElementById('computer-choice').src = images.question;
 }
