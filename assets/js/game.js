@@ -9,18 +9,34 @@ const gameRules = {
 
 // Image paths for game choices with error handling
 const images = {
-    rock: './assets/images/rock.png',
-    paper: './assets/images/paper.png',
-    scissors: './assets/images/scissors.png',
-    lizard: './assets/images/lizard.png',
-    spock: './assets/images/spock.png',
-    question: './assets/images/question.png'
+    rock: 'assets/images/rock.png',
+    paper: 'assets/images/paper.png',
+    scissors: 'assets/images/scissors.png',
+    lizard: 'assets/images/lizard.png',
+    spock: 'assets/images/spock.png',
+    question: 'assets/images/question.gif'
 };
 
 // Score tracking
 let userScore = 0;
 let computerScore = 0;
 let tieScore = 0;
+
+// Initialize game
+document.addEventListener('DOMContentLoaded', () => {
+    // Add click handlers to choice buttons
+    document.querySelectorAll('.choice-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const choice = button.getAttribute('data-choice');
+            if (choice) {
+                playRound(choice);
+            }
+        });
+    });
+    
+    // Initialize scoreboard
+    updateScoreboard();
+});
 
 // Get computer choice
 function getBangChoice() {
@@ -82,6 +98,11 @@ function resetGame() {
     tieScore = 0;
     updateScoreboard();
     updateResult('Choose your move!');
-    document.getElementById('user-choice').src = images.question;
-    document.getElementById('computer-choice').src = images.question;
+    
+    const userImg = document.getElementById('user-choice');
+    const bangImg = document.getElementById('computer-choice');
+    if (userImg && bangImg) {
+        userImg.src = images.question;
+        bangImg.src = images.question;
+    }
 }
