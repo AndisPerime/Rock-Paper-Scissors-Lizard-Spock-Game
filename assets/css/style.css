@@ -1,0 +1,60 @@
+/* Styles for game-window.html */
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(196, 127, 0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(51, 47, 47, 0.3);
+    max-width: 800px;
+    width: 90%;
+    z-index: 1000;
+}
+.close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+.game-container {
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.choices {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 20px;
+}
+.choice-btn {
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: rgb(248, 234, 111);
+}
+.choice-btn img {
+    width: 90px;
+    height: 50px;
+    object-fit: contain;
+}
+#user-choice, #computer-choice {
+    width: 120px;
+    height: 100px;
+    object-fit: contain;
+}
+/* Added a miirrored effect to the user-choice images */
+#user-choice {
+    transform: scaleX(-1);
+}
+
+.controls button:first-child img,
+.controls button:nth-child(2) img,
+.controls button:nth-child(3) img,
+.controls button:nth-child(4) img,
+.controls button:nth-child(5) img {
+    transform: scaleX(-1);
+}
