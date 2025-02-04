@@ -49,15 +49,8 @@
     height: 100px;
     object-fit: contain;
 }
-/* Added a miirrored effect to the user-choice images */
-#user-choice {
-    transform: scaleX(-1);
-}
-.controls button:first-child img,
-.controls button:nth-child(2) img,
-.controls button:nth-child(3) img,
-.controls button:nth-child(4) img,
-.controls button:nth-child(5) img {
+    /* Added a miirrored effect to the user-choice images */
+#user-choice, .choice-btn {
     transform: scaleX(-1);
 }
 
