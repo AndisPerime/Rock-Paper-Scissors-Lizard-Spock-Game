@@ -95,25 +95,36 @@
 /**this is the css for the index and about us.html */
 body    {
     background-color: hsl(0, 0%, 0%);
-    color: white;
+    font-family: "Alegreya", sans-serif;
+    color: rgb(160, 137, 64);
     line-height: 1.6;
     margin: 20px;
     padding: 5px;
 }
 h1 {
-    color: hsl(0, 0%, 100%);
+    color: hsl(46, 79%, 45%);
+    font-family: "audiowide", cursive;
     font-size: 2em;
     margin: 10px 0;
     padding: 0;
 }
 h2 {
-    color: hsl(0, 0%, 100%);
+    color: hsl(46, 79%, 45%);
+    font-family: "audiowide", cursive;
     font-size: 1.5em;
     margin: 40px 0 20px 0;
     padding: 0;
 }
 header  {   
-    margin-top: 30px;
+    background-color: hsl(0, 0%, 0%);
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-family: "audiowide", cursive;
+    border-radius: 50%;
+    font-size: 4rem;
 }
 
 /**this is the css for the collaborator's section in About Us page */
@@ -126,7 +137,7 @@ header  {
 }
 
 .team-member {
-  
+    font-family: "Audiowide", cursive;
     text-align: center;
 }
 .team-member button {
@@ -139,6 +150,7 @@ header  {
     cursor: pointer;
 }
 .team-member img {
+    
     width: 100%;
     height: auto;
     border-radius : 50%;
@@ -174,11 +186,12 @@ header  {
 
 .info-button {
     padding: 10px 20px;
+    font-family: "audiowide", cursive;
     border-radius: 5px;
-    border: solid 1px #ffffff;
+    border: solid 1px hsl(46, 79%, 45%);;
     background-color: #000000;
     margin: 20px;
-    color: white;
+    color: hsl(46, 79%, 45%);;
     cursor: pointer;
     transition: background-color 0.3s;
 }
