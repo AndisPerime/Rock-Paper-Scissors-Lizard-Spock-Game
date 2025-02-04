@@ -21,16 +21,27 @@ header  {
    
     margin-top: 30px;
 }
+
 /* Styles for game-window.html */
+.game-window {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../images/flames-vertical.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: justify;
+}
 .popup {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgb(196, 127, 0);
+    background: rgba(101, 71, 6, 0.5);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(51, 47, 47, 0.3);
+    box-shadow: 0 0 20px rgba(174, 133, 10, 0.3);
     max-width: 800px;
     width: 90%;
     z-index: 1000;
@@ -49,18 +60,28 @@ header  {
 }
 .choices {
     display: flex;
-    justify-content: space-around;
-    margin: 20px 20px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 800px;
 }
 .choice-btn {
-    padding: 20px;
-    margin: 10px;
+    padding: 15px;
+    margin: 0;
     cursor: pointer;
-    background-color: rgb(248, 234, 111);
+    background-color: rgb(194, 189, 161);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
 .choice-btn img {
-    width: 90px;
-    height: 50px;
+    width: 80px;
+    height: 60px;
     object-fit: contain;
 }
 .choice-btn:disabled {
@@ -68,32 +89,34 @@ header  {
     transition: opacity 0.3s ease;
 }
 #user-choice, #computer-choice {
-    width: 120px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     object-fit: contain;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
 }
-    /* Added a miirrored effect to the user-choice images */
-#user-choice, .choice-btn {
+/* Added a miirrored effect to the user-choice images */
+#user-choice, .controls {
     transform: scaleX(-1);
 }
-
 #difficulty-btn {
     margin-left: 10px;
     padding: 8px 15px;
-    background-color: rgb(248, 234, 111);
+    background-color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 #difficulty-btn:hover {
-    background-color: rgb(245, 223, 44);
+    background-color: rgb(0, 0, 0);
 }
 
 #difficulty-select {
     margin-left: 10px;
     padding: 8px 15px;
-    background-color: rgb(248, 234, 111);
+    background-color: rgb(246, 207, 15);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -107,4 +130,14 @@ header  {
 #difficulty-select option {
     background-color: #fff;
     color: #000;
+}
+
+#reset-btn {
+    margin-left: 10px;
+    padding: 8px 15px;
+    background-color: rgb(246, 207, 15);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
 }
