@@ -61,10 +61,9 @@ These are the rules for the game:
 ## Use of AI
 
 ## Contributors
-- Person 1
-- Person 2
-- Person 3
-- Person 4
-
+- Andis Budzilko
+- Edite Budzilko
+- Aaron
+- Alicia Garrido
 ## License
 Include the license information for the project.

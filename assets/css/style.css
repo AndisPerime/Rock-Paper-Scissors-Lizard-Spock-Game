@@ -1,3 +1,26 @@
+body    {
+    background-color: hsl(0, 0%, 0%);
+    color: white;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 5px;
+}
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 2em;
+    margin: 10px 0;
+    padding: 0;
+}
+h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5em;
+    margin: 40px 0 20px 0;
+    padding: 0;
+}
+header  {
+   
+    margin-top: 30px;
+}
 /* Styles for game-window.html */
 .popup {
     position: fixed;
