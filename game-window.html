@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
-<body>
+<body class="game-window">
     <div class="popup">
         <span class="close-btn" onclick="window.close()">&times;</span>
         <div class="game-container">
@@ -50,14 +50,15 @@
                 </button>
             </div>
 
-            <button onclick="resetGame()">Reset Game</button>
+            <button onclick="resetGame()" id="reset-btn">Reset Game</button>
             <select id="difficulty-select" onchange="changeDifficulty(this.value)">
                 <option value="easy">Easy</option>
                 <option value="normal" selected>Normal</option>
                 <option value="hard">Hard</option>
             </select>
+        <div>For information on the game rules, click <a href="index.html" target="_blank">here</a></div>
+
         </div>
-    </div>
     <script src="assets/js/game.js"></script>
 </body>
 </html>
