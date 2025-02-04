@@ -7,47 +7,7 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <style>
-        .team-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .team-member button {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            background: none;
-            border: 1px solid white;
-            color: white;
-            cursor: pointer;
-        }
-
-        .profile-card {
-            background: #000000;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-
-        .profile-card img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        .profile-card h5 {
-            margin: 10px 0;
-            color: #ffffff;
-        }
-
-        .profile-card p {
-            color: #666;
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/css/style.css">    
 </head>
 
 <body>
@@ -71,7 +31,7 @@
                 <div class="team-member">
                     <button onclick="toggleVisibility('edite_pf')">Edite</button>
                     <div id="edite_pf" class="profile-card">
-                        <img src="./assets/images/edite.png" alt="Edite's profile picture">
+                        <img src="./assets/images/edite.png" alt="Edite's profile picture" class="rounded-circle">
                         <h5>Edite Budzilko</h5>
                         <p>The creative genius behind our game design and aesthetics. Edite has an eye for detail and a passion for crafting visually stunning experiences. Her innovative designs ensure that players are fully immersed in the game world.</p>
                     </div>
@@ -80,7 +40,7 @@
                 <div class="team-member">
                     <button onclick="toggleVisibility('andis_pf')">Andis</button>
                     <div id="andis_pf" class="profile-card">
-                        <img src="./assets/images/andis.png" alt="Andis's profile picture">
+                        <img src="./assets/images/andis.png" alt="Andis's profile picture" class="rounded-circle">
                         <h5>Andis Budzilko</h5>
                         <p>The technical wizard who ensures everything runs smoothly. With a strong background in software development, Andis is responsible for implementing the intricate JavaScript code that powers Bang Out Game. His expertise guarantees a seamless and enjoyable gaming experience.</p>
                     </div>
@@ -89,7 +49,7 @@
                 <div class="team-member">
                     <button onclick="toggleVisibility('ali_pf')">Ali</button>
                     <div id="ali_pf" class="profile-card">
-                        <img src="./assets/images/ali.png" alt="Ali's profile picture">
+                        <img src="./assets/images/ali.png" alt="Ali's profile picture" class="rounded-circle">
                         <h5>Ali Garrido</h5>
                         <p>Our project manager who keeps us all on track. Alicia's exceptional organizational skills and strategic thinking have been crucial in coordinating our efforts and meeting deadlines. Her leadership and dedication ensure that every aspect of the project is executed flawlessly.</p>
                     </div>
@@ -98,7 +58,7 @@
                 <div class="team-member">
                     <button onclick="toggleVisibility('tyron_pf')">Tyron</button>
                     <div id="tyron_pf" class="profile-card">
-                        <img src="./assets/images/tyron.png" alt="Tyron's profile picture">
+                        <img src="./assets/images/tyron.png" alt="Tyron's profile picture" class="rounded-circle">
                         <h5>Tyron Sir</h5>
                         <p>The marketing maestro who gets our game out to the world. Tyron's expertise in marketing and communication has helped us reach a wider audience. His creative campaigns and engaging content have generated excitement and anticipation for Bang Out Game.</p>
                     </div>
@@ -136,6 +96,49 @@
             <li>Andis - Software Development</li>
             <li>Ali - Project Management</li>
             <li>Tyron - Marketing and Communication</li>
+        </ul>
+    <div class="button-container"></div>
+        <button class="info-button" onclick="showInfo('edite')">Edite's Work Details</button>
+        <button class="info-button" onclick="showInfo('andis')">Andis's Work Details</button>
+        <button class="info-button" onclick="showInfo('ali')">Ali's Work Details</button>
+        <button class="info-button" onclick="showInfo('tyron')">Tyron's Work Details</button>
+    </div>
+
+    <style>
+    .button-container {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+
+    .info-button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: solid 1px #ffffff;
+        background-color: #000000;
+        margin: 20px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .info-button:hover {
+        background-color: #45a049;
+    }
+    </style>
+
+    <script>
+    function showInfo(member) {
+        const info = {
+            edite: "Detailed information about Edite's game design work and creative process.",
+            andis: "Technical details about Andis's software development contributions.",
+            ali: "Overview of Ali's project management methodology and achievements.",
+            tyron: "Information about Tyron's marketing strategies and campaign results."
+        };
+        alert(info[member]);
+    }
+    </script>
     </section>
 
 </body>
