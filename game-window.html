@@ -51,7 +51,11 @@
             </div>
 
             <button onclick="resetGame()">Reset Game</button>
-            <button id="difficulty-btn" onclick="toggleDifficulty()">Difficulty: Normal</button>
+            <select id="difficulty-select" onchange="changeDifficulty(this.value)">
+                <option value="easy">Easy</option>
+                <option value="normal" selected>Normal</option>
+                <option value="hard">Hard</option>
+            </select>
         </div>
     </div>
     <script src="assets/js/game.js"></script>
