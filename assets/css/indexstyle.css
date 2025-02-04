@@ -4,6 +4,15 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #ffffff;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+    transition: transform 3s ease-in-out;
 }
 
 .card-container {
