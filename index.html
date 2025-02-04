@@ -4,78 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors Lizard Spock</title>
-    <style>
-        .card-container {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        .card {
-            flex: 1;
-            margin: 10px;
-            min-width: 300px;
-            box-sizing: border-box;
-            text-align: center;
-        }
-        .card-container .card {
-            height: 100%;
-            margin-right: 15rem;
-        }
-        
-        @media (max-width: 768px) {
-            .card-container {
-                flex-direction: column;
-                align-items: center;
-            }
-            .card {
-                flex: 100%;
-                max-width: 100%;
-                margin-right: 0;
-            }
-        }
-        .button-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 25px;
-            margin-right: 0;
-        }
-        .button-container button {
-            box-shadow: 0px 0px 14px 0px #e66a0c;
-            background-color:#eb881e;
-            border-radius:17px;
-            border:4px solid #d1c704;
-            display:inline-block;
-            cursor:pointer;
-            color:#ffffff;
-            font-family:Georgia;
-            font-size: 16px;
-            padding:12px 24px;
-            text-decoration:none;
-            text-shadow:0px 3px 3px #c48508;
-        }
-        .button-container button:active {
-            position: center;
-            top:1px;
-        }
-        .button-container button:hover {
-            background-color:#db660d;
-        }
-        .button-container button:active {
-            position:relative;
-            top:1px;
-        }
-
-        header h1 {
-            text-align: center;
-        }
-        .card h2 {
-            text-align: center;
-        }
-        .card ol, .card ul {
-            text-align: left;
-            display: inline-block;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/indexstyle.css">
+    <script src="assets/js/index.js" defer></script>
 </head>
 <body>
     <header>
@@ -94,6 +24,7 @@
                     <li>Click on the "Reset" button to reset the game.</li>
                 </ol>
             </div>
+        
             <div class="card">
                 <h2>Rules</h2>
                 <ul>
@@ -110,12 +41,14 @@
                 </ul>
             </div>
         </div>
-
         <div class="button-container">
             <button onclick="window.open('game-window.html', 'width=1400,height=1000')">Play Game</button>
         </div>
     </main>
 
+    <footer>
+        <p>&copy; 2025 Bang Out! | Created by Team Bang Out!</p>
+    </footer>
 </body>
 </html>
 
