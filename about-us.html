@@ -28,44 +28,52 @@
             <p>Meet our brilliant team of collaborators who have poured their hearts into making Bang Out Game a reality:</p>
 
             <div class="team-container">
-                <div class="team-member">
-                    <button onclick="toggleVisibility('edite_pf')">Edite</button>
-                    <div id="edite_pf" class="profile-card">
-                        <img src="./assets/images/edite.png" alt="Edite's profile picture" class="rounded-circle">
+                <div class="team-member">   
+                    <div onclick="toggleVisibility('edite_pf')">                 
+                        <img src="./assets/images/edite.png"  alt="Edite's profile picture">
                         <h5>Edite Budzilko</h5>
+                    </div>
+                    <div id="edite_pf" class="profile-card">                        
                         <p>The creative genius behind our game design and aesthetics. Edite has an eye for detail and a passion for crafting visually stunning experiences. Her innovative designs ensure that players are fully immersed in the game world.</p>
                     </div>
                 </div>
 
                 <div class="team-member">
-                    <button onclick="toggleVisibility('andis_pf')">Andis</button>
-                    <div id="andis_pf" class="profile-card">
-                        <img src="./assets/images/andis.png" alt="Andis's profile picture" class="rounded-circle">
+                    
+                    <div onclick="toggleVisibility('andis_pf')">
+                        <img src="./assets/images/andis.png" alt="Andis's profile picture">
                         <h5>Andis Budzilko</h5>
+                    </div>
+                    <div id="andis_pf" class="profile-card">
+                        
                         <p>The technical wizard who ensures everything runs smoothly. With a strong background in software development, Andis is responsible for implementing the intricate JavaScript code that powers Bang Out Game. His expertise guarantees a seamless and enjoyable gaming experience.</p>
                     </div>
                 </div>
 
                 <div class="team-member">
-                    <button onclick="toggleVisibility('ali_pf')">Ali</button>
-                    <div id="ali_pf" class="profile-card">
-                        <img src="./assets/images/ali.png" alt="Ali's profile picture" class="rounded-circle">
+                    <div onclick="toggleVisibility('ali_pf')">
+                        <img src="./assets/images/ali.png" alt="Ali's profile picture">
                         <h5>Ali Garrido</h5>
+                    </div>
+                    <div id="ali_pf" class="profile-card">
+                        
                         <p>Our project manager who keeps us all on track. Alicia's exceptional organizational skills and strategic thinking have been crucial in coordinating our efforts and meeting deadlines. Her leadership and dedication ensure that every aspect of the project is executed flawlessly.</p>
                     </div>
                 </div>
 
                 <div class="team-member">
-                    <button onclick="toggleVisibility('tyron_pf')">Tyron</button>
-                    <div id="tyron_pf" class="profile-card">
-                        <img src="./assets/images/tyron.png" alt="Tyron's profile picture" class="rounded-circle">
+                    <div onclick="toggleVisibility('tyron_pf')">
+                        <img src="./assets/images/tyron.png" alt="Tyron's profile picture">
                         <h5>Tyron Sir</h5>
+                    </div>
+                    <div id="tyron_pf" class="profile-card">
                         <p>The marketing maestro who gets our game out to the world. Tyron's expertise in marketing and communication has helped us reach a wider audience. His creative campaigns and engaging content have generated excitement and anticipation for Bang Out Game.</p>
                     </div>
                 </div>
             </div>
 
             <script>
+              
                 function toggleVisibility(id) {
                     var element = document.getElementById(id);
                     if (element.style.display === "none") {
@@ -120,43 +128,6 @@
             </div>
             `;
             document.body.appendChild(modal);
-
-            // Add styles
-            const style = document.createElement('style');
-            style.textContent = `
-            #infoModal {
-                display: none;
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0,0,0,0.7);
-                z-index: 1000;
-            }
-            .modal-content {
-                background-color: #000;
-                color: #fff;
-                margin: 15% auto;
-                padding: 20px;
-                border: 1px solid #888;
-                width: 80%;
-                max-width: 500px;
-                border-radius: 5px;
-                position: relative;
-            }
-            .close-btn {
-                color: #aaa;
-                float: right;
-                font-size: 28px;
-                font-weight: bold;
-                cursor: pointer;
-            }
-            .close-btn:hover {
-                color: black;
-            }
-            `;
-            document.head.appendChild(style);
 
             // Add close functionality
             modal.querySelector('.close-btn').onclick = () => modal.style.display = 'none';
