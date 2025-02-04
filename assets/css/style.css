@@ -156,3 +156,26 @@ header  {
 .profile-card p {
     color: #666;
 }
+.button-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+/**this is the css for the 'the making' section in About Us page */
+
+.info-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: solid 1px #ffffff;
+    background-color: #000000;
+    margin: 20px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.info-button:hover {
+    background-color: #da7517d8;
+}

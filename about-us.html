@@ -91,43 +91,15 @@
             the power of collaboration. We are incredibly proud of what we've achieved and can't wait for you to experience
             the magic of Bang Out Game.</p>
         <p>Here you can find more info about each of our collaborators' work:</p>
-        <ul>
-            <li>Edite - Game Design and Aesthetics</li>
-            <li>Andis - Software Development</li>
-            <li>Ali - Project Management</li>
-            <li>Tyron - Marketing and Communication</li>
-        </ul>
-    <div class="button-container"></div>
-        <button class="info-button" onclick="showInfo('edite')">Edite's Work Details</button>
-        <button class="info-button" onclick="showInfo('andis')">Andis's Work Details</button>
-        <button class="info-button" onclick="showInfo('ali')">Ali's Work Details</button>
-        <button class="info-button" onclick="showInfo('tyron')">Tyron's Work Details</button>
-    </div>
 
-    <style>
-    .button-container {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-        margin: 20px;
-    }
+        <div class="button-container">
+            <button class="info-button" onclick="showInfo('edite')">Edite's Work</button>
+            <button class="info-button" onclick="showInfo('andis')">Andis's Work</button>
+            <button class="info-button" onclick="showInfo('ali')">Ali's Work</button>
+            <button class="info-button" onclick="showInfo('tyron')">Tyron's Work</button>
+        </div>
 
-    .info-button {
-        padding: 10px 20px;
-        border-radius: 5px;
-        border: solid 1px #ffffff;
-        background-color: #000000;
-        margin: 20px;
-        color: white;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
-
-    .info-button:hover {
-        background-color: #45a049;
-    }
-    </style>
-
+   
     <script>
     function showInfo(member) {
         const info = {
@@ -136,7 +108,63 @@
             ali: "Overview of Ali's project management methodology and achievements.",
             tyron: "Information about Tyron's marketing strategies and campaign results."
         };
-        alert(info[member]);
+        // Get or create modal element
+        let modal = document.getElementById('infoModal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'infoModal';
+            modal.innerHTML = `
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <p id="modal-text"></p>
+            </div>
+            `;
+            document.body.appendChild(modal);
+
+            // Add styles
+            const style = document.createElement('style');
+            style.textContent = `
+            #infoModal {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.7);
+                z-index: 1000;
+            }
+            .modal-content {
+                background-color: #000;
+                color: #fff;
+                margin: 15% auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%;
+                max-width: 500px;
+                border-radius: 5px;
+                position: relative;
+            }
+            .close-btn {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .close-btn:hover {
+                color: black;
+            }
+            `;
+            document.head.appendChild(style);
+
+            // Add close functionality
+            modal.querySelector('.close-btn').onclick = () => modal.style.display = 'none';
+        }
+
+        // Show modal with info
+        document.getElementById('modal-text').textContent = info[member];
+        modal.style.display = 'block';
     }
     </script>
     </section>
