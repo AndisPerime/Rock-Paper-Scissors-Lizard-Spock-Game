@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <!-- Introduction and Purpose -->
+    <section>
+        <h2>Why this project?</h2>
+        <p>Our company is the best because we have the best people working for us. We have the best products and the best prices. We are simply the best.</p>
+    </section>
+    <section>
+        <h2>Collaborators</h2>
+        <p>Our company is the best because we have the best people working for us. We have the best products and the best prices. We are simply the best.</p>
+        
+        <button onclick="toggleVisibility('edite_pf')">Edite</button>
+        <button onclick="toggleVisibility('andis_pf')">Andis</button>
+        <button onclick="toggleVisibility('ali_pf')">Alicia</button>
+        <button onclick="toggleVisibility('tyron_pf')">Tyron</button>
+
+        <script>
+        function toggleVisibility(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none") {
+            element.style.display = "block";
+            } else {
+            element.style.display = "none";
+            }
+        }
+
+        // Hide all divs initially
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById('edite_pf').style.display = 'none';
+            document.getElementById('andis_pf').style.display = 'none';
+            document.getElementById('ali_pf').style.display = 'none';
+            document.getElementById('tyron_pf').style.display = 'none';
+        });
+        </script>
+        <div id="edite_pf">Edite</div>
+        <div id="andis_pf">Andis Budzilko</div>
+        <div id="ali_pf">Alicia Garrido</div>
+        <div id="tyron_pf">Tyron</div>        
+    </section>
+    <section>
+        <h2>The making of Bang Out Game</h2>
+        <p>Our company is the best because we have the best people working for us. We have the best products and the best prices. We are simply the best.</p>
+    </section>
+    
+</body>
+</html>
