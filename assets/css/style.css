@@ -59,29 +59,33 @@ header  {
     background-repeat: no-repeat;
 }
 .choices {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
-    flex-wrap: nowrap;
-    gap: 10px;
+    align-items: center;
+    gap: 25px;
     margin: 20px auto;
-    max-width: 800px;
+    width: 100%;
+    height: 120px;
+    flex-wrap: nowrap;
+    position: relative;
 }
 .choice-btn {
+    position: relative;
+    flex: 0 0 auto;
+    width: 90px;
+    height: 90px;
     padding: 15px;
     margin: 0;
     cursor: pointer;
     background-color: rgb(194, 189, 161);
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
 }
 .choice-btn img {
-    width: 80px;
-    height: 60px;
+    width: 65px;
+    height: 45px;
     object-fit: contain;
 }
 .choice-btn:disabled {
@@ -93,7 +97,7 @@ header  {
     height: 150px;
     object-fit: contain;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.69);
     padding: 20px;
 }
 /* Added a miirrored effect to the user-choice images */
@@ -140,4 +144,34 @@ header  {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    width: 100%;
+}
+
+#difficulty-select, #reset-btn {
+    margin: 0;
+    padding: 8px 15px;
+    background-color: rgb(246, 207, 15);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    height: 35px;
+}
+
+#difficulty-btn {
+    margin: 0;
+    padding: 8px 15px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 35px;
 }
