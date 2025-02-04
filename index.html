@@ -5,21 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors Lizard Spock</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .card {
+            flex: 1;
+            margin: 10px;
+            min-width: 300px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .card-container .card {
+            height: 100%;
+            margin-right: 15rem;
+        }
+        
+        @media (max-width: 768px) {
+            .card {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+            margin-right: 0;
+        }
+        .button-container button {
+            box-shadow: 0px 0px 14px 0px #e66a0c;
+            background-color:#eb881e;
+            border-radius:17px;
+            border:4px solid #d1c704;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Georgia;
+            font-size: 16px;
+            padding:12px 24px;
+            text-decoration:none;
+            text-shadow:0px 3px 3px #c48508;
+        }
+        .button-container button:active {
+            position: center;
+            top:1px;
+        }
+        .button-container button:hover {
+            background-color:#db660d;
+        }
+        .button-container button:active {
+            position:relative;
+            top:1px;
+        }
+
+        header h1 {
+            text-align: center;
+        }
+        .card h2 {
+            text-align: center;
+        }
+        .card ol, .card ul {
+            text-align: left;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Rock Paper Scissors Lizard Spock</h1>
+        <h1>Bang Out!</h1>
     </header>
-
-    <button onclick="window.open('game-window.html', 'Game', 'width=1200,height=900')">Play Game</button>
-    
     <main>
-        <h2>Rules</h2>
-        <p>Scissors cuts Paper, Paper covers Rock, Rock crushes Lizard, 
-        <b></b> poisons Spock, Spock smashes Scissors, Scissors decapitates Lizard,
-        <b></b> Lizard eats Paper, Paper disproves Spock, Spock vaporizes Rock, 
-        <b></b> as it always has, Rock crushes Scissors.</p>
+        <p>Bang Out is an extended version of the classic Rock, Paper, Scissors game, created by Sam Kass and Karen Bryla to reduce ties. This our team version about this game. At this game you will meet Bang, which will try beat you in the game. The game is simple, you just need to choose one of the five options and see if you win, lose or tie. The game will keep track of the score and you can reset it at any time.</p>
+        <div class="card-container">
+            <div class="card">
+                <h2>Instruction</h2>
+                <ol>
+                    <li>Click on the "Play Game" button to start the game.</li>
+                    <li>Click one of the five buttons to select your move.</li>
+                    <li>The result will be displayed, indicating who won or if it was a tie.</li>
+                    <li>The score will update accordingly.</li>
+                    <li>Click on the "Reset" button to reset the game.</li>
+                </ol>
+            </div>
+            <div class="card">
+                <h2>Rules</h2>
+                <ul>
+                    <li><i><u>Scissors</u></i> cuts <i><u>Paper</u></i></li>
+                    <li><i><u>Paper</u></i> covers <i><u>Rock</u></i></li>
+                    <li><i><u>Rock</u></i> crushes <i><u>Lizard</u></i></li>
+                    <li><i><u>Lizard</u></i> poisons <i><u>Spock</u></i></li>
+                    <li><i><u>Spock</u></i> smashes <i><u>Scissors</u></i></li>
+                    <li><i><u>Scissors</u></i> decapitates <i><u>Lizard</u></i></li>
+                    <li><i><u>Lizard</u></i> eats <i><u>Paper</u></i></li>
+                    <li><i><u>Paper</u></i> disproves <i><u>Spock</u></i></li>
+                    <li><i><u>Spock</u></i> vaporizes <i><u>Rock</u></i></li>
+                    <li><i><u>Rock</u></i> crushes <i><u>Scissors</u></i></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button onclick="window.open('game-window.html', 'width=1400,height=1000')">Play Game</button>
+        </div>
     </main>
 
 </body>
 </html>
+
