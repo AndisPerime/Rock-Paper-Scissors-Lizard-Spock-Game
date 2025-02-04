@@ -96,18 +96,10 @@ header  {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
 }
-<<<<<<< HEAD
-    /* Added a miirrored effect to the user-choice images */
-#user-choice, .choice-btn {
-    transform: scaleX(-1);
-}
-
-=======
 /* Added a miirrored effect to the user-choice images */
 #user-choice, .controls {
     transform: scaleX(-1);
 }
->>>>>>> main
 #difficulty-btn {
     margin-left: 10px;
     padding: 8px 15px;
