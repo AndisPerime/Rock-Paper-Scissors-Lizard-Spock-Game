@@ -1,52 +1,157 @@
-# Rock-Paper-Scissors-Lizard-Spock Game
+# Bang Out!
 
-## Overview
+This is a simple web-based implementation of the Rock Paper Scissors Lizard Spock game using HTML, CSS, and JavaScript. The game allows users to play against an AI opponent, with animations and sound effects enhancing the experience.
 
-This project is an extended version of the classic Rock, Paper, Scissors game, known as Rock-Paper-Scissors-Lizard-Spock. The game was created to reduce ties and provide a more engaging experience. The user faces off against an AI opponent named Bang.
+[View live project here](https://andisperime.github.io/Bang-Out!/index.html)
 
-## Code Development
+## CONTENTS
 
-The code for this project was written with the assistance of AI, specifically GitHub Copilot. The AI provided suggestions and code snippets that helped streamline the development process, ensuring efficient and effective coding practices.
+- User Experience (UX)
+  - User Stories
+- Creation Process
+  - Strategy
+  - Scope
+  - Structural
+  - Wireframes
+- Page Features
+- Future Features
+- Technical Implementation
+  - Interactivity
+  - Experience Design
+  - Accessibility Features
+- Technologies Used
+  - Languages Used
+  - Frameworks, Libraries, Technologies & Programs Used
+  - Code Structure
+- Validation
+- AI Collaboration
+- Contributors
 
-## Interactivity
+## User Experience (UX)
 
-The game includes several interactive elements:
-- **Game Buttons**: Users can select their move by clicking one of the five buttons.
-- **Difficulty Levels**: Users can choose between Easy, Normal, and Hard difficulty levels.
-- **Score Tracking**: The game keeps track of the user's score and updates it accordingly.
-- **Reset Button**: Users can reset the game at any time to start over.
+### User Stories
 
-## Experience Design
+#### External user’s goal:
 
-The design of the game focuses on providing an enjoyable and intuitive user experience:
-- **Visuals**: The game features a visually appealing background and well-designed buttons.
-- **Instructions and Rules**: Clear instructions and rules are provided to help users understand how to play the game.
-- **Feedback**: The game provides immediate feedback on the result of each move, indicating whether the user won, lost, or tied.
+The site’s users want to play an online game that has elements of chance.
 
-## Accessibility
+#### Site owner's goal:
 
-Accessibility considerations were taken into account to ensure the game is usable by a wide range of users:
-- **Text Size**: Font sizes are increased for better readability. 
-- **Color Contrast**: Colors are chosen to provide sufficient contrast for users with visual impairments.
-- **Keyboard Navigation**: The game can be navigated using the keyboard, making it accessible to users who cannot use a mouse.
+The site’s goal is to provide a challenging game with increasing levels of difficulty to entertain online users.
 
+## Creation Process
 
-## Responsive DOM Manipulation
+### Strategy
 
-The game is designed to be responsive and adapt to different screen sizes:
-- **Media Queries**: CSS media queries are used to adjust the layout and styling based on the screen size.
-- **Flexible Layout**: The layout is designed to be flexible and adjust to different screen widths, ensuring a consistent experience across devices.
-- **Dynamic Content**: The game dynamically updates the DOM to reflect the user's interactions and provide real-time feedback.
+- We need a website that is friendly and inviting to all ages.
+- We want it to be animated and easy to use.
+- Easy to choose the game mode.
 
-## Conclusion
+### Scope
 
-This project demonstrates the use of AI in code development, as well as best practices in interactivity, experience design, accessibility, and responsive DOM manipulation. The result is a fun and engaging game that can be enjoyed by users of all abilities on various devices.
+- The website needs to be available in multiple sizes for different devices.
+- Easy to access the game style and difficulty levels.
+- Find out about the developers in the about us section.
+- How to play the game information.
 
-## Future Enhancements
+### Structural
 
-Potential features and improvements for future versions of the game include:
-- **Multiplayer Mode**: Allowing users to play against each other online.
-- **Statistics Tracking**: Keeping track of user statistics over multiple games.
-- **Customizable Themes**: Providing options for users to customize the game's appearance.
-- **Voice Commands**: Enabling users to play the game using voice commands for a hands-free experience.
-- **Advanced AI**: Developing a more sophisticated AI opponent with learning capabilities.
+The website will be simple to use and easy to navigate for all ages. The website will use a canvas as a backdrop and as the game screen. Modals will be used to get information to the player.
+
+### Wireframes
+
+- Wireframe - Mobile
+- Wireframe - Tablet
+- Wireframe - Desktop
+
+## Page Features
+
+- Five selectable choices: Rock, Paper, Scissors, Lizard, and Spock
+- AI (Bang) opponent makes random choices
+- Animated result displays
+- Effects for wins and losses
+- Score tracking for player and Bang (AI)
+
+## Future Features
+
+- Planned enhancements include:
+  - Additional animation effects
+  - Enhanced difficulty modes
+  - Mobile-specific optimizations
+  - Sound effects and background music
+  - Multiplayer capabilities
+
+## Technical Implementation
+
+### Interactivity
+
+- Implemented dynamic button interactions for game choices
+- Created responsive difficulty selection system
+- Added real-time score tracking and updates
+- Incorporated animated visual feedback for user actions
+- Developed an intelligent computer opponent with varying difficulty levels
+
+### Experience Design
+
+- Designed an intuitive user interface with clear visual feedback
+- Created engaging animations for choice selections
+- Implemented a difficulty system that adapts to player performance
+- Added visual cues for game state changes
+- Maintained consistent visual styling throughout the application
+
+### Accessibility Features
+
+- Ensured proper contrast ratios for text visibility
+- Added clear visual indicators for interactive elements
+- Implemented keyboard navigation support
+- Included disabled state styling for buttons
+- Used semantic HTML for better screen reader compatibility
+
+## Technologies Used
+
+### Languages Used
+
+- HTML
+- CSS
+- JavaScript
+
+### Frameworks, Libraries, Technologies & Programs Used
+
+- Balsamiq - used to create wireframes.
+- GitHub - used to save and store all files.
+- Git - used for version control.
+- Visual Studio Code - used as a workspace.
+- Google Fonts - fonts were chosen and imported from here.
+- Hotpot AI - for favicon.
+- Dev Tools - to debug and for testing responsiveness.
+- Google Lighthouse - for auditing the website.
+- W3C Validator - for validating the HTML and CSS code.
+- Krita - For touching up the images.
+
+### Code Structure
+
+The project is organized into several key components:
+- CSS styling for visual presentation and animations
+- JavaScript for game logic and DOM manipulation
+- HTML structure for the game interface
+- Asset management for images and other resources
+
+## Validation
+
+- HTML Validation using W3C Validation
+- CSS Validation using W3C Validation
+- Lighthouse scores via Chrome Developer Tools
+
+## AI Collaboration
+
+During the development of this project, we utilized AI tools (specifically GitHub Copilot) to enhance our development process:
+- Used AI for initial code structure suggestions
+- Leveraged AI for debugging and code optimization
+- Maintained creative control while using AI as a supportive tool
+- Carefully reviewed and modified AI suggestions to ensure code quality and functionality
+
+## Contributors
+
+- Andis (team leader) - made Game window page by using JavaScript.
+- Edite – made home page by using HTML and CSS, ensuring the game structure and navigation be easy.
+- Alicia – made about us page by using HTML, CSS, and JavaScript, creating cohesive and visually appealing design.
