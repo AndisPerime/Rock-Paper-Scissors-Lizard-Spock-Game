@@ -5,17 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors Lizard Spock</title>
     <link rel="stylesheet" href="assets/css/indexstyle.css">
-    <script src="assets/js/index.js" defer></script>
 </head>
 <body>
-    
-    <main>
-                <div class="card">
-                    <h1>Welcome to <b>Bang Out!</b></h1>
-                        <p>This is an extended version of the classic Rock, Paper, Scissors game, created by Sam Kass and Karen Bryla to reduce ties. In our version, you will face off against Bang. Choose one of the five options and see if you win, lose, or tie. The game will keep track of your score, and you can reset it at any time. Enjoy the game!</p>
-                </div>
-   
         <div class="card-container">
+            <h1>Welcome to <b>Bang Out!</b></h1>
+            <p style="font-size: 1.2em;">This is an extended version of the classic Rock, Paper, Scissors game, created by Sam Kass and Karen Bryla to reduce ties. In our version, you will face off against Bang. Choose one of the five options and see if you win, lose, or tie. The game will keep track of your score, and you can reset it at any time. Enjoy the game!</p>
             <div class="card">
                 <h2>Instruction</h2>
                 <ol>
@@ -23,10 +17,10 @@
                     <li>Click on the <i>Play Game </i>button to start the game.</li>
                     <li>Choose difficulty level:
                         <ul>
-                        <li><u>Easy:</u> In this mode you have 40% bigger chance to win Bang.</li>
-                        <li><u>Normal:</u> This game mode is standart game mode.</li>
-                        <li><u>Hard:</u> In this mode if you win by +2 score, then three random choices are denied for you to use until the Bang catches you up in score. </li>
-                    </ul>
+                            <li><u>Easy:</u> In this mode you have 40% bigger chance to win Bang.</li>
+                            <li><u>Normal:</u> This game mode is standart game mode.</li>
+                            <li><u>Hard:</u> In this mode if you win by +2 score, then three random choices are denied for you to use until the Bang catches you up in score. </li>
+                        </ul>
                     </li>
                     <li>Click one of the five buttons to select your move.</li>
                     <li>The result will be displayed, indicating who won or if it was a tie.</li>
@@ -34,7 +28,7 @@
                     <li>Click on the <i>Reset Game</i> button to reset the game.</li>
                 </ol>
             </div>
-        
+    
             <div class="card">
                 <h2>Rules</h2>
                 <ul>
@@ -50,12 +44,10 @@
                     <li><i><u>Rock</u></i> crushes <i><u>Scissors</u></i></li>
                 </ul>
             </div>
+            <div class="button-container">
+                <button onclick="window.open('game-window.html', 'width=1400,height=1000')">Play Game</button>
+            </div>
         </div>
-        <div class="button-container">
-            <button onclick="window.open('game-window.html', 'width=1400,height=1000')">Play Game</button>
-        </div>
-    </main>
-
     <footer>
         <p>&copy; 2025 Bang Out! | Created by Team Bang Out!</p>
     </footer>
