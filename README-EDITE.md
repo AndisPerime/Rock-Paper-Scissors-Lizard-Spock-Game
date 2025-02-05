@@ -2,7 +2,7 @@
 
 This is a simple web-based implementation of the Rock Paper Scissors Lizard Spock game using HTML, CSS, and JavaScript. The game allows users to play against an AI opponent, with animations and sound effects enhancing the experience.
 
-[View live project here](https://andisperime.github.io/Bang-Out!/index.html)
+[View live project here](https://andisperime.github.io/Rock-Paper-Scissors-Lizard-Spock-Game/)
 
 ## CONTENTS
 
