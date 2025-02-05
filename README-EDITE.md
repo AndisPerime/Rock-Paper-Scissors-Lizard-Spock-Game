@@ -26,9 +26,10 @@ The design of the game focuses on providing an enjoyable and intuitive user expe
 ## Accessibility
 
 Accessibility considerations were taken into account to ensure the game is usable by a wide range of users:
-- **Text Size**: Font sizes are increased for better readability.
+- **Text Size**: Font sizes are increased for better readability. 
 - **Color Contrast**: Colors are chosen to provide sufficient contrast for users with visual impairments.
 - **Keyboard Navigation**: The game can be navigated using the keyboard, making it accessible to users who cannot use a mouse.
+
 
 ## Responsive DOM Manipulation
 
@@ -40,3 +41,12 @@ The game is designed to be responsive and adapt to different screen sizes:
 ## Conclusion
 
 This project demonstrates the use of AI in code development, as well as best practices in interactivity, experience design, accessibility, and responsive DOM manipulation. The result is a fun and engaging game that can be enjoyed by users of all abilities on various devices.
+
+## Future Enhancements
+
+Potential features and improvements for future versions of the game include:
+- **Multiplayer Mode**: Allowing users to play against each other online.
+- **Statistics Tracking**: Keeping track of user statistics over multiple games.
+- **Customizable Themes**: Providing options for users to customize the game's appearance.
+- **Voice Commands**: Enabling users to play the game using voice commands for a hands-free experience.
+- **Advanced AI**: Developing a more sophisticated AI opponent with learning capabilities.
