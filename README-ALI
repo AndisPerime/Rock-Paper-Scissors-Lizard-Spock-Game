@@ -1,0 +1,63 @@
+# Rock Paper Scissors Lizard Spock Game
+
+## [Live Site Link]()
+
+## Introduction
+[Brief introduction about the project]
+
+## Project Purpose
+[Explain the main purpose of creating this project]
+
+## Website Purpose
+[Describe what the website aims to achieve]
+
+## Planning
+
+### External User Goals
+[List main goals for external users]
+
+### Site Owner Goals
+[List main goals for the site owner]
+
+### Target Audience
+[Describe the target audience]
+
+### User Stories
+- As a user, I want to...
+- As a site owner, I want to...
+
+### Wireframes
+[Add wireframe images and descriptions]
+
+## Features
+[List and describe main features]
+
+### Content
+[Describe the content structure]
+
+## Deployed Site
+[Describe the deployed site and add screenshots]
+
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- [Other technologies used]
+
+## Testing
+
+### Manual Testing
+| Test Case | Description | Expected Result | Actual Result | Pass/Fail |
+|-----------|-------------|-----------------|---------------|-----------|
+| | | | | |
+
+### Online Testing Tools
+- W3C HTML Validator
+- W3C CSS Validator
+- JSHint
+- [Other testing tools used]
+
+## Credits
+- Content
+- Media
+- Acknowledgements
