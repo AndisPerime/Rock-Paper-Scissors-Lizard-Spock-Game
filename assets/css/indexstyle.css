@@ -17,61 +17,51 @@ body {
     opacity: 0.5;
     transition: transform 3s ease-in-out;
 }
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.card-container p {
+    text-align: center;
+}
 .card-container {
     flex: 1; /* Allow card container to grow and push footer down */
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     margin-top: 0px; 
-    margin: 10px;
-    min-width: 100px;
     box-sizing: border-box;
-    text-align: center;
-    color: #ffffff;
+    margin-top: 50px;
     background-color: rgb(196, 127, 0);
     padding: 20px;
     border-radius: 10px;
     opacity: 0.89;
-    height: auto; /* Change height to auto */
-    z-index: 1; /* Ensure the card container is below other elements */
+    z-index: 1;
 }
 
-.card {
-    flex-basis: 100%;
-    margin: 10px;
-    width: calc(100% - 20px);
+.card-container .card:nth-of-type(1) {
+    text-align: left;
+    font-size: 1.1rem;
+    
 }
 
-@media (min-width: 768px) {
-    .card {
-        flex-basis: 48%;
-        width: calc(48% - 20px);
-    }
-}
-
-@media (min-width: 1024px) {
-    .card {
-        flex-basis: 32%;
-        width: calc(32% - 20px);
-    }
-}
-
-.card-container .card {
-    height: 100%;
-    margin-right: 15rem;
-}
-
-.card-container .card:nth-of-type(1),
 .card-container .card:nth-of-type(2) {
-    max-width: 1800px;
-    margin: 0 auto 20px auto; /* Center the cards and add bottom margin */
-    max-height: 1000px
+    text-align: left;
+    
 }
 
 .card-container .card:nth-of-type(1) ol,
 .card-container .card:nth-of-type(2) ul {
     font-size: 1.2em; /* Increase font size */
 }
+
+
 
 .button-container {
     display: flex;
@@ -95,7 +85,7 @@ body {
     text-decoration:none;
     text-shadow:0px 3px 3px #c48508;
     width: 25vh;
-    height: 10vh;
+    height: 8vh;
 }
 .button-container button:active {
     position: center;
@@ -105,25 +95,41 @@ body {
     background-color:#db660d;
 }
 
-header h1 {
-    text-align: center;
-    color: #ffffff;
-}
-.card h2 {
-    text-align: center;
-    color: #ffffff;
-}
-.card ol, .card ul {
-    text-align: left;
-    display: inline-block;
-    color: #ffffff;
-}
-
 footer {
-    position: relative; /* Ensure footer is at the bottom of the page */
-    width: 100%;
+    position: relative;
     text-align: center; /* Center the footer text */
     background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a background color */
-    padding: 10px 0;
-    z-index: 1000; /* Ensure the footer is above other elements */
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .button-container button {
+        width: 20vh;
+        height: 7vh;
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .button-container button {
+        width: 18vh;
+        height: 6vh;
+        font-size: 16px;
+        padding: 10px 20px;
+    }
 }
