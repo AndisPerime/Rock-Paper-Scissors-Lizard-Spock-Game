@@ -13,7 +13,7 @@
     <header>
         <div>
           <h1 class="logo">Bang Out Game</h1>  
-          <span class="close-btn" onclick="window.close()">&times;</span>
+          <span class="close-btn" onclick="window.location.href='index.html'">&times;</span>
         </div>        
     </header>
     <!-- Introduction and Purpose -->
@@ -99,7 +99,6 @@
             <button class="info-button" onclick="showInfo('tyron')">Tyron's Work</button>
         </div>
 
-   
     <script>
     function showInfo(member) {
         const info = {
@@ -129,6 +128,7 @@
         // Show modal with info
         document.getElementById('modal-text').textContent = info[member];
         modal.style.display = 'block';
+        </script>
     </section>
     <footer>
         <p>&copy; 2024 Bang Out Game. All rights reserved.</p>
