@@ -2,28 +2,58 @@
 
 ## About Andis
 
-Welcome to the Rock-Paper-Scissors-Lizard-Spock Game repository! This project was created by Andis, a passionate and talented developer with a knack for creating fun and engaging games.
+This was my first hackathon and overall this was a great experience to show my skills and work in a team in an agile environment.
 
-## Why Andis is Great
+## Development Process
 
-- **Skilled Developer**: Andis has a deep understanding of various programming languages and frameworks, making him a versatile and proficient coder.
-- **Creative Thinker**: Andis brings creativity to every project, ensuring that the end product is not only functional but also enjoyable.
-- **Problem Solver**: With a keen eye for detail, Andis excels at identifying and solving complex problems efficiently.
-- **Team Player**: Andis is known for his excellent communication skills and ability to work well with others, making him a valuable team member.
+### AI Collaboration
+During the development of this project, I utilized AI tools (specifically GitHub Copilot) to enhance my development process:
+- Used AI for initial code structure suggestions
+- Leveraged AI for debugging and code optimization
+- Maintained creative control while using AI as a supportive tool
+- Carefully reviewed and modified AI suggestions to ensure code quality and functionality
 
-## About the Project
+### Technical Implementation
 
-The Rock-Paper-Scissors-Lizard-Spock Game is a fun twist on the classic Rock-Paper-Scissors game. It includes additional elements to make the game more interesting and challenging.
+#### Interactivity
+- Implemented dynamic button interactions for game choices
+- Created responsive difficulty selection system
+- Added real-time score tracking and updates
+- Incorporated animated visual feedback for user actions
+- Developed an intelligent computer opponent with varying difficulty levels
 
-## How to Play
+#### Experience Design
+- Designed an intuitive user interface with clear visual feedback
+- Created engaging animations for choice selections
+- Implemented a difficulty system that adapts to player performance
+- Added visual cues for game state changes
+- Maintained consistent visual styling throughout the application
 
-1. Clone the repository to your local machine.
-2. Open the project in your preferred code editor.
-3. Follow the instructions in the code to start the game.
-4. Enjoy playing Rock-Paper-Scissors-Lizard-Spock!
+#### Accessibility Features
+- Ensured proper contrast ratios for text visibility
+- Added clear visual indicators for interactive elements
+- Implemented keyboard navigation support
+- Included disabled state styling for buttons
+- Used semantic HTML for better screen reader compatibility
 
-## Contact
+#### Responsive DOM Manipulation
+- Dynamic updating of game state without page reloads
+- Real-time modification of button states based on game rules
+- Smooth transitions for visual elements
+- Efficient event handling for user interactions
+- Responsive layout adjustments for different screen sizes
 
-If you have any questions or feedback, feel free to reach out to Andis at [your email address].
+### Code Structure
+The project is organized into several key components:
+- CSS styling for visual presentation and animations
+- JavaScript for game logic and DOM manipulation
+- HTML structure for the game interface
+- Asset management for images and other resources
 
-Thank you for checking out the project, and happy gaming!
+### Future Improvements
+Planned enhancements include:
+- Additional animation effects
+- Enhanced difficulty modes
+- Mobile-specific optimizations
+- Sound effects and background music
+- Multiplayer capabilities
