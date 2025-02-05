@@ -134,9 +134,6 @@ function updateScoreboard() {
     if (userScoreElement) userScoreElement.textContent = userScore.toString();
     if (computerScoreElement) computerScoreElement.textContent = computerScore.toString();
     if (tieScoreElement) tieScoreElement.textContent = tieScore.toString();
-    
-    // Log scores for debugging
-    console.log(`Scores - User: ${userScore}, Computer: ${computerScore}, Ties: ${tieScore}`);
 }
 
 // Modify playRound function to ensure score updates

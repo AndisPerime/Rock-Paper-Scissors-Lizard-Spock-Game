@@ -63,7 +63,7 @@ These are the rules for the game:
 ## Contributors
 - Andis Budzilko
 - Edite Budzilko
-- Aaron
+- Tyron Wilson
 - Alicia Garrido
 ## License
 Include the license information for the project.
