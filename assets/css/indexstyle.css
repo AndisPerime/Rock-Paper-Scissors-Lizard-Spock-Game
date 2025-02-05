@@ -23,7 +23,7 @@ body {
 .card {
     flex: 1;
     margin: 10px;
-    min-width: 300px;
+    min-width: 100px;
     box-sizing: border-box;
     text-align: center;
     color: #ffffff;
@@ -34,6 +34,18 @@ body {
 .card-container .card {
     height: 100%;
     margin-right: 15rem;
+}
+
+.card:first-of-type {
+    max-width: 1500px;
+    margin: 0 auto 20px auto; /* Center the card and add bottom margin */
+}
+
+.card-container .card:nth-of-type(1),
+.card-container .card:nth-of-type(2) {
+    max-width: 550px;
+    margin: 0 auto 20px auto; /* Center the cards and add bottom margin */
+    max-height: 3000px
 }
 
 @media (max-width: 1440px) {
@@ -73,7 +85,7 @@ body {
 .button-container {
     display: flex;
     justify-content: center;
-    margin-top: 25px;
+    margin-top: 50px; /* Increase top margin */
     margin-right: 0;
 }
 .button-container button {
@@ -85,8 +97,8 @@ body {
     cursor:pointer;
     color:#ffffff;
     font-family:Georgia;
-    font-size: 16px;
-    padding:12px 24px;
+    font-size: 20px; /* Increase font size */
+    padding:16px 32px; /* Increase padding */
     text-decoration:none;
     text-shadow:0px 3px 3px #c48508;
 }
