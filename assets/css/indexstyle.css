@@ -5,6 +5,9 @@ body {
     background-attachment: fixed;
     color: #ffffff;
     overflow-x: hidden; /* Prevent horizontal overflow */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes the full height of the viewport */
 }
 
 .background-image {
@@ -29,7 +32,7 @@ body {
     background-color: rgb(196, 127, 0);
     padding: 20px;
     border-radius: 10px;
-    opacity: 0.99;
+    opacity: 0.92;
     height: auto; /* Change height to auto */
     z-index: 1; /* Ensure the card container is below other elements */
 }
@@ -63,7 +66,7 @@ body {
 .card-container .card:nth-of-type(2) {
     max-width: 1800px;
     margin: 0 auto 20px auto; /* Center the cards and add bottom margin */
-    max-height: 1000px
+    max-height: 1000px;
 }
 
 .card-container .card:nth-of-type(1) ol,
@@ -127,4 +130,5 @@ footer {
     background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a background color */
     padding: 10px 0;
     z-index: 1000; /* Ensure the footer is above other elements */
+    margin-top: auto; /* Push the footer to the bottom */
 }
