@@ -26,9 +26,10 @@ The design of the game focuses on providing an enjoyable and intuitive user expe
 ## Accessibility
 
 Accessibility considerations were taken into account to ensure the game is usable by a wide range of users:
-- **Text Size**: Font sizes are increased for better readability.
+- **Text Size**: Font sizes are increased for better readability. 
 - **Color Contrast**: Colors are chosen to provide sufficient contrast for users with visual impairments.
 - **Keyboard Navigation**: The game can be navigated using the keyboard, making it accessible to users who cannot use a mouse.
+
 
 ## Responsive DOM Manipulation
 
