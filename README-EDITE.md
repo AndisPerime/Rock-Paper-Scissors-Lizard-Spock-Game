@@ -2,7 +2,7 @@
 
 This is a simple web-based implementation of the Rock Paper Scissors Lizard Spock game using HTML, CSS, and JavaScript. The game allows users to play against an AI opponent, with animations and sound effects enhancing the experience.
 
-[View live project here](https://andisperime.github.io/Bang-Out!/index.html)
+[View live project here](https://andisperime.github.io/Rock-Paper-Scissors-Lizard-Spock-Game/)
 
 ## CONTENTS
 
@@ -26,6 +26,7 @@ This is a simple web-based implementation of the Rock Paper Scissors Lizard Spoc
 - Validation
 - AI Collaboration
 - Contributors
+- License
 
 ## Introduction
 
@@ -41,10 +42,7 @@ To cater to different skill levels, the website allows players to select from a 
 
 ## Planning
 
-During the initial project meeting, we focused on key considerations such as user experience (UX), design consistency, and we had some time for brainstorming ideas. 
-We discussed the technical setup, including server configuration and repository management. 
-Roles were assigned for project manager, front-end development, internal game logic development and UX/UI design. 
-The team framework was chosen, with a Scrum Master appointed to facilitate agile practices. This thorough planning set a solid foundation for our collaborative efforts and aimed to deliver a high-quality web application.
+During the initial project meeting, we focused on key considerations such as user experience (UX), design consistency, and brainstorming ideas. We discussed the technical setup, including server configuration and repository management. Roles were assigned for project manager, front-end development, internal game logic development, and UX/UI design. The team framework was chosen, with a Scrum Master appointed to facilitate agile practices. This thorough planning set a solid foundation for our collaborative efforts and aimed to deliver a high-quality web application.
 
 ## User Experience (UX)
 
@@ -59,19 +57,17 @@ The site’s users want to play an online game that has elements of chance.
 The site’s goal is to provide a challenging game with increasing levels of difficulty to entertain online users.
 
 ### Target Audience
+
 - Casual Gamers - Individuals who enjoy light-hearted, quick games that provide entertainment without requiring a long-term commitment or deep strategy.
-
 - Fans of Classic Games - This audience enjoys nostalgic elements combined with new and interesting mechanics that keep the gameplay exciting and unpredictable.
-
-- Pop Culture Enthusiasts - Followers of "The Big Bang Theory" where the game gained popularity. This public enjoys references from their favorite TV shows, movies... adding an extra layer of enjoyment.
-
-- All Ages - Due to its simple rules yet engaging and strategic elements it's a great choice for family gatherings, classroom activities, or casual play with friends of varying age groups.
-
+- Pop Culture Enthusiasts - Followers of "The Big Bang Theory" where the game gained popularity. This public enjoys references from their favorite TV shows, movies, adding an extra layer of enjoyment.
+- All Ages - Due to its simple rules yet engaging and strategic elements, it's a great choice for family gatherings, classroom activities, or casual play with friends of varying age groups.
 - Technology & Gaming Communities - Players interested in innovative and creative adaptations of classic games. This audience values originality and creativity in game design, and they appreciate the effort put into developing unique gameplay experiences that stand out from the crowd.
 
 ### User Stories
+
 - As a user, I want to select one of the options (Rock, Paper, Scissors, Lizard, Spock) and play against the computer, so that I can enjoy the game.
-- As a user, I want to see my score, my opponents and the number of draws so that I can track my progress and have a clear end goal.
+- As a user, I want to see my score, my opponent's, and the number of draws so that I can track my progress and have a clear end goal.
 - As a user, I want the game to have increasing levels of difficulty, so that it remains engaging and challenging.
 - As a site owner, I want to provide a challenging game with increasing levels of difficulty and a score-tracking system, so that users stay engaged and motivated to keep playing.
 
@@ -96,20 +92,20 @@ The website will be simple to use and easy to navigate for all ages. The website
 
 ## Instructions
 
-1. Read Rules and Instruction before start the game
+1. Read Rules and Instructions before starting the game.
 2. Click on the Play Game button to start the game.
-3. Choose difficulty level: 
-- Easy: In this mode you have 40% bigger chance to win Bang.
-- Normal: This game mode is standart game mode.
-- Hard: In this mode if you win by +2 score, then three random choices are denied for you to use until the Bang catches you up in score.
-5. Click one of the five buttons to select your move.
-6. The individual round's result will be displayed, indicating who won or if it was a tie.
-7. The score will update accordingly and show message confirming winner.
-8. Click on the Reset Game button to reset the game.
+3. Choose difficulty level:
+   - Easy: In this mode, you have a 40% bigger chance to win against Bang.
+   - Normal: This game mode is the standard game mode.
+   - Hard: In this mode, if you win by +2 score, then three random choices are denied for you to use until Bang catches up in score.
+4. Click one of the five buttons to select your move.
+5. The individual round's result will be displayed, indicating who won or if it was a tie.
+6. The score will update accordingly and show a message confirming the winner.
+7. Click on the Reset Game button to reset the game.
 
 ## Rules
 
-For each round there's an outcome according to the rules below: Either there's a winner and a loser or else the result can be a draw if the same variable is picked by both players.
+For each round, there's an outcome according to the rules below: Either there's a winner and a loser, or else the result can be a draw if the same variable is picked by both players.
 
 These are the rules for the game:
 
@@ -223,4 +219,5 @@ During the development of this project, we utilized AI tools (specifically GitHu
 - Alicia – made about us page by using HTML, CSS, and JavaScript, creating cohesive and visually appealing design.
 
 ## License
+
 Include the license information for the project.
