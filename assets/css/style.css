@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Audiowide&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 /* Styles for game-window.html */
 .popup {
     position: fixed;
@@ -95,7 +97,7 @@
 /**this is the css for the index and about us.html */
 body    {
     background-color: hsl(0, 0%, 0%);
-    font-family: "Alegreya", sans-serif;
+    font-family: "Nunito", sans-serif;
     color: rgb(160, 137, 64);
     line-height: 1.6;
     margin: 20px;
