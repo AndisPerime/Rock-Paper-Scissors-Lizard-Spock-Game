@@ -17,7 +17,6 @@ body {
     opacity: 0.5;
     transition: transform 3s ease-in-out;
 }
-
 .card-container {
     flex: 1; /* Allow card container to grow and push footer down */
     display: flex;
