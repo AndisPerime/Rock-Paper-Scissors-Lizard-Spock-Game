@@ -1,4 +1,3 @@
-
 /* Styles for game-window.html */
 .game-window {
     display: flex;
@@ -34,6 +33,12 @@
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+#result {
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 120000;
+    font-size: 1.5em;
 }
 .choices {
     display: inline-flex;
@@ -89,11 +94,9 @@
     border-radius: 5px;
     cursor: pointer;
 }
-
 #difficulty-btn:hover {
     background-color: rgb(0, 0, 0);
 }
-
 #difficulty-select {
     margin-left: 10px;
     padding: 8px 15px;
@@ -103,16 +106,50 @@
     cursor: pointer;
     font-size: 1em;
 }
-
 #difficulty-select:hover {
     background-color: rgb(245, 223, 44);
 }
-
 #difficulty-select option {
     background-color: #fff;
     color: #000;
 }
-
+#reset-btn {
+    margin-left: 10px;
+    padding: 8px 15px;
+    background-color: rgb(246, 207, 15);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    width: 100%;
+}
+#difficulty-select, #reset-btn {
+    margin: 0;
+    padding: 8px 15px;
+    background-color: rgb(246, 207, 15);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    height: 35px;
+}
+#difficulty-btn {
+    margin: 0;
+    padding: 8px 15px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 35px;
+}
+/* Other styles */
 body    {
     background-color: hsl(0, 0%, 0%);
     color: white;
@@ -132,9 +169,6 @@ h2 {
     margin: 40px 0 20px 0;
     padding: 0;
 }
-header  {
-   
+header {
     margin-top: 30px;
-    
 }
-
