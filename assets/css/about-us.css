@@ -3,7 +3,7 @@
 /**this is the css for the index and about us.html */
 body    {
     background-color: hsl(0, 0%, 0%);
-    font-family: "Alegreya", sans-serif;
+    font-family: "Nunito", sans-serif;
     color: rgb(255, 255, 255);
     line-height: 1.6;
     margin: 20px;
@@ -15,13 +15,25 @@ h1 {
     font-size: 2em;
     margin: 10px 0;
     padding: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
 }
 h2 {
     color: rgb(255, 255, 255);
     font-family: "audiowide", cursive;
-    font-size: 1.em;;
+    font-size: 1em;
     margin: 40px 0 20px 0;
     padding: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h5 {
+    color: rgb(255, 255, 255);
+    font-family: "audiowide", cursive;
+    font-size: 1em;
+    margin: 10px 0;
+    padding: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 header {   
     background-color: #000000;
@@ -30,7 +42,7 @@ header {
 }
 
 main {
-    background-color: rgb(196, 127, 0.9);
+    background-color: rgba(214, 139, 0, 0.9);
     border-radius: 10px;
     padding: 5%;
     max-width: 80%;
@@ -84,13 +96,14 @@ footer {
     cursor: pointer;
 }
 .team-member img {
-    
     width: 100%;
     height: auto;
-    border-radius : 50%;
-    width : 150px;  
-    height : 150px; 
-    object-fit : cover;
+    border-radius: 50%;
+    width: 150px;  
+    height: 150px; 
+    object-fit: cover;
+    filter: sepia(60%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* Added shadow in your theme color */
 }
 
 .profile-card {
@@ -151,7 +164,7 @@ footer {
 
 #infoModal .modal-content {
     background-color: #000;
-    color: #fff;
+    color: rgba(214, 139, 0, 0.9);
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -162,7 +175,7 @@ footer {
 }
 
 #infoModal .close-btn {
-    color: #aaa;
+    color:  rgba(214, 139, 0, 0.9);;
     float: right;
     font-size: 28px;
     font-weight: bold;
