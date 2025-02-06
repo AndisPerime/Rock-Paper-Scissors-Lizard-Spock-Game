@@ -8,6 +8,24 @@ body    {
     line-height: 1.6;
     margin: 20px;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../images/indexback.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    font-family: "Alegreya", sans-serif;
+}
+
+.background-image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+    transition: transform 3s ease-in-out;
 }
 h1 {
     color: rgb(255, 255, 255);
@@ -36,7 +54,7 @@ h5 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 header {   
-    background-color: #000000;
+    
     padding: 20px;
     text-align: center;
 }
@@ -56,6 +74,7 @@ main {
     border-radius: 50%;
     font-size: 4rem;
     color: rgb(196, 127, 0.9);;
+    text-shadow: 2px 2px 4px #ffed9d;
 }
 
 .close-btn {
