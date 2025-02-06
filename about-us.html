@@ -13,9 +13,9 @@
 
     <header>
         <div>
-            <h1 class="logo">Bang Out Game</h1>
-            <span class="close-btn" onclick="window.close()">&times;</span>
-        </div>
+          <h1 class="logo">Bang Out Game</h1>  
+          <span class="close-btn" onclick="window.location.href='index.html'">&times;</span>
+        </div>        
     </header>
 
     <main>
@@ -92,7 +92,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Making profile info visible -->
                 <script>
                     function toggleVisibility(id) {
@@ -109,60 +108,14 @@
                         document.getElementById('ali_pf').style.display = 'none';
                     });
                 </script>
-            </section>
-            <!-- Making the game section -->
-           <!-- <section>
-                <h2>The making of Bang Out Game</h2>
-                <p>The journey of creating Bang Out Game has been an exhilarating adventure. From brainstorming sessions
-                    to
-                    late-night coding marathons, our team worked tirelessly to bring this vision to life. Each member
-                    contributed
-                    their unique skills and perspectives, resulting in a game that is not only fun to play but also a
-                    testament to
-                    the power of collaboration. We are incredibly proud of what we've achieved and can't wait for you to
-                    experience
-                    the magic of Bang Out Game.</p>
-                <p>Here you can find more info about each of our collaborators' work:</p>
-
-                <div class="button-container team-container">
-                    <button class="info-button" onclick="showInfo('edite')">Edite's Work</button>
-                    <button class="info-button" onclick="showInfo('andis')">Andis's Work</button>
-                    <button class="info-button" onclick="showInfo('ali')">Ali's Work</button>
-                </div>
-                --modal for showing info--
-                <script>
-                    function showInfo(member) {
-                        const info = {
-                            edite: "Detailed information about Edite's game design work and creative process.",
-                            andis: "Technical details about Andis's software development contributions.",
-                            ali: "Overview of Ali's project management methodology and achievements.",
-                        };
-
-                        // Get or create modal element
-                        let modal = document.getElementById('infoModal');
-                        if (!modal) {
-                            modal = document.createElement('div');
-                            modal.id = 'infoModal';
-                            modal.innerHTML = `
-                    <div class="modal-content">
-                        <span class="close-btn">&times;</span>
-                        <p id="modal-text"></p>
-                    </div>
-                    `;
-                            document.body.appendChild(modal);
-
-                            // Add close functionality
-                            modal.querySelector('.close-btn').onclick = () => modal.style.display = 'none';
-                        }
-
-                        // Show modal with info
-                        document.getElementById('modal-text').textContent = info[member];
-                        modal.style.display = 'block';
-                    }
-                </script>
-            </section> -->
+          </section>
         </div>
     </main>
+        // Show modal with info
+        document.getElementById('modal-text').textContent = info[member];
+        modal.style.display = 'block';
+        </script>
+    </section>
     <footer>
         <p>&copy; 2024 Bang Out Game. All rights reserved.</p>
     </footer>
