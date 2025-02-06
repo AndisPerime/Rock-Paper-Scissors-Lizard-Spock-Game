@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/about-us.css">
 
 </head>
@@ -13,107 +13,130 @@
 
     <header>
         <div>
-          <h1 class="logo">Bang Out Game</h1>  
-          <span class="close-btn" onclick="window.location.href='index.html'">&times;</span>
-        </div>        
-    </header>
-
-    <main>
-        <div>
-            <!-- Introduction and Purpose section-->
-            <section>
-                <h1>About Us</h1>
-                <h2>Why we made the Bang Out Game</h2>
-                <p>Inspired by the classic rock, paper, scissors, we've added an exciting twist with lizard and spock.
-                    Our
-                    team has
-                    implemented cutting-edge JavaScript to bring you a seamless gaming experience. Test your skills with
-                    varying
-                    levels
-                    of difficulty and enjoy an engaging design that keeps you coming back for more. At the heart of our
-                    project is a
-                    spirit of collaboration, bringing together innovative minds to create something truly extraordinary.
-                </p>
-            </section>
-            <!-- Collaborators section -->
-            <section>
-                <h2>Collaborators</h2>
-                <p>Meet our brilliant team of collaborators who have poured their hearts into making Bang Out Game a
-                    reality:</p>
-
-                <div class="team-container">
-                    <div class="team-member">
-                        <div onclick="toggleVisibility('edite_pf')">
-                            <img src="./assets/images/edite.png" alt="Edite's profile picture">
-                            <h5>Edite Budzilko</h5>
-                        </div>
-                        <div id="edite_pf" class="profile-card">
-                            <p>The creative genius behind our game design and aesthetics. Edite has an eye for detail
-                                and a
-                                passion
-                                for crafting visually stunning experiences. Her innovative designs ensure that players
-                                are
-                                fully
-                                immersed in the game world.</p>
-                        </div>
-                    </div>
-
-                    <div class="team-member">
-
-                        <div onclick="toggleVisibility('andis_pf')">
-                            <img src="./assets/images/andis.png" alt="Andis's profile picture">
-                            <h5>Andis Budzilko</h5>
-                        </div>
-                        <div id="andis_pf" class="profile-card">
-
-                            <p>The technical wizard who ensures everything runs smoothly. With a strong background in
-                                software
-                                development, Andis is responsible for implementing the intricate JavaScript code that
-                                powers
-                                Bang
-                                Out Game. His expertise guarantees a seamless and enjoyable gaming experience.</p>
-                        </div>
-                    </div>
-
-                    <div class="team-member">
-                        <div onclick="toggleVisibility('ali_pf')">
-                            <img src="./assets/images/ali.png" alt="Ali's profile picture">
-                            <h5>Ali Garrido</h5>
-                        </div>
-                        <div id="ali_pf" class="profile-card">
-
-                            <p>Our project manager who keeps us all on track. Alicia's exceptional organizational skills
-                                and
-                                strategic thinking have been crucial in coordinating our efforts and meeting deadlines.
-                                Her
-                                leadership and dedication ensure that every aspect of the project is executed
-                                flawlessly.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Making profile info visible -->
-                <script>
-                    function toggleVisibility(id) {
-                        var element = document.getElementById(id);
-                        if (element.style.display === "none") {
-                            element.style.display = "block";
-                        } else {
-                            element.style.display = "none";
-                        }
-                    }
-                    document.addEventListener("DOMContentLoaded", function () {
-                        document.getElementById('edite_pf').style.display = 'none';
-                        document.getElementById('andis_pf').style.display = 'none';
-                        document.getElementById('ali_pf').style.display = 'none';
-                    });
-                </script>
-          </section>
+            <h1 class="logo">Bang Out Game</h1>
+            <span class="close-btn" onclick="window.close()">&times;</span>
         </div>
-    </main>
-        // Show modal with info
-        document.getElementById('modal-text').textContent = info[member];
-        modal.style.display = 'block'; 
+    </header>
+    <!-- Introduction and Purpose -->
+    <section>
+        <h1>About Us</h1>
+        <h2>Why we made the Bang Out Game</h2>
+        <p>Inspired by the classic rock, paper, scissors, we've added an exciting twist with lizard and spock. Our team has
+            implemented cutting-edge JavaScript to bring you a seamless gaming experience. Test your skills with varying
+            levels
+            of difficulty and enjoy an engaging design that keeps you coming back for more. At the heart of our project is a
+            spirit of collaboration, bringing together innovative minds to create something truly extraordinary.</p>
+    </section>
+    <section>
+        <h2>Collaborators</h2>
+        <p>Meet our brilliant team of collaborators who have poured their hearts into making Bang Out Game a reality:</p>
+    
+        <div class="team-container">
+            <div class="team-member">
+                <div onclick="toggleVisibility('edite_pf')">
+                    <img src="./assets/images/edite.png" alt="Edite's profile picture">
+                    <h5>Edite Budzilko</h5>
+                </div>
+                <div id="edite_pf" class="profile-card">
+                    <p>The creative genius behind our game design and aesthetics. Edite has an eye for detail and a passion
+                        for crafting visually stunning experiences. Her innovative designs ensure that players are fully
+                        immersed in the game world.</p>
+                </div>
+            </div>
+    
+            <div class="team-member">
+    
+                <div onclick="toggleVisibility('andis_pf')">
+                    <img src="./assets/images/andis.png" alt="Andis's profile picture">
+                    <h5>Andis Budzilko</h5>
+                </div>
+                <div id="andis_pf" class="profile-card">
+    
+                    <p>The technical wizard who ensures everything runs smoothly. With a strong background in software
+                        development, Andis is responsible for implementing the intricate JavaScript code that powers Bang
+                        Out Game. His expertise guarantees a seamless and enjoyable gaming experience.</p>
+                </div>
+            </div>
+    
+            <div class="team-member">
+                <div onclick="toggleVisibility('ali_pf')">
+                    <img src="./assets/images/ali.png" alt="Ali's profile picture">
+                    <h5>Ali Garrido</h5>
+                </div>
+                <div id="ali_pf" class="profile-card">
+    
+                    <p>Our project manager who keeps us all on track. Alicia's exceptional organizational skills and
+                        strategic thinking have been crucial in coordinating our efforts and meeting deadlines. Her
+                        leadership and dedication ensure that every aspect of the project is executed flawlessly.</p>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+
+            function toggleVisibility(id) {
+                var element = document.getElementById(id);
+                if (element.style.display === "none") {
+                    element.style.display = "block";
+                } else {
+                    element.style.display = "none";
+                }
+            }
+
+            document.addEventListener("DOMContentLoaded", function () {
+                document.getElementById('edite_pf').style.display = 'none';
+                document.getElementById('andis_pf').style.display = 'none';
+                document.getElementById('ali_pf').style.display = 'none';
+                document.getElementById('tyron_pf').style.display = 'none';
+            });
+        </script>
+    </section>
+    <section>
+        <h2>The making of Bang Out Game</h2>
+        <p>The journey of creating Bang Out Game has been an exhilarating adventure. From brainstorming sessions to
+            late-night coding marathons, our team worked tirelessly to bring this vision to life. Each member contributed
+            their unique skills and perspectives, resulting in a game that is not only fun to play but also a testament to
+            the power of collaboration. We are incredibly proud of what we've achieved and can't wait for you to experience
+            the magic of Bang Out Game.</p>
+        <p>Here you can find more info about each of our collaborators' work:</p>
+    
+        <div class="button-container">
+            <button class="info-button" onclick="showInfo('edite')">Edite's Work</button>
+            <button class="info-button" onclick="showInfo('andis')">Andis's Work</button>
+            <button class="info-button" onclick="showInfo('ali')">Ali's Work</button>
+            <button class="info-button" onclick="showInfo('tyron')">Tyron's Work</button>
+        </div>
+    
+    
+        <script>
+            function showInfo(member) {
+                const info = {
+                    edite: "Detailed information about Edite's game design work and creative process.",
+                    andis: "Technical details about Andis's software development contributions.",
+                    ali: "Overview of Ali's project management methodology and achievements.",
+                    tyron: "Information about Tyron's marketing strategies and campaign results."
+                };
+            }
+            // Get or create modal element
+            let modal = document.getElementById('infoModal');
+            if (!modal) {
+                modal = document.createElement('div');
+                modal.id = 'infoModal';
+                modal.innerHTML = `
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <p id="modal-text"></p>
+                </div>
+                `;
+                document.body.appendChild(modal);
+
+                            // Add close functionality
+                            modal.querySelector('.close-btn').onclick = () => modal.style.display = 'none';
+                        }
+
+            // Show modal with info
+            document.getElementById('modal-text').textContent = info[member];
+            modal.style.display = 'block';
     </section>
     <footer>
         <p>&copy; 2024 Bang Out Game. All rights reserved.</p>
