@@ -1,5 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Audiowide&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+/**this is the css for the index and about us.html */
+body    {
+    background-color: hsl(0, 0%, 0%);
+    font-family: "Nunito", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.6;
+    margin: 20px;
+    padding: 5px;
+}
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: "audiowide", cursive;
+    font-size: 2em;
+    margin: 10px 0;
+    padding: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+h2 {
+    color: rgb(255, 255, 255);
+    font-family: "audiowide", cursive;
+    font-size: 1em;
+    margin: 40px 0 20px 0;
+    padding: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h5 {
+    color: rgb(255, 255, 255);
+    font-family: "audiowide", cursive;
+    font-size: 1em;
+    margin: 10px 0;
+    padding: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+header {   
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    background-color: rgba(214, 139, 0, 0.9);
+    border-radius: 10px;
+    padding: 5%;
+    max-width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    font-family: "audiowide", cursive;
+    border-radius: 50%;
+    font-size: 4rem;
+    color: rgb(196, 127, 0.9);;
+}
+
 .close-btn {
     position: absolute;
     right: 10px;
@@ -8,40 +66,11 @@
     font-size: 24px;
     color: #fff;
 }
-
-/**this is the css for the index and about us.html */
-body    {
-    background-color: hsl(0, 0%, 0%);
-    font-family: "Alegreya", sans-serif;
-    color: rgb(160, 137, 64);
-    line-height: 1.6;
-    margin: 20px;
-    padding: 5px;
-}
-h1 {
-    color: hsl(46, 79%, 45%);
-    font-family: "audiowide", cursive;
-    font-size: 2em;
-    margin: 10px 0;
-    padding: 0;
-}
-h2 {
-    color: hsl(46, 79%, 45%);
-    font-family: "audiowide", cursive;
-    font-size: 1.5em;
-    margin: 40px 0 20px 0;
-    padding: 0;
-}
-header  {   
-    background-color: hsl(0, 0%, 0%);
-    padding: 20px;
-    text-align: center;
-}
-
-.logo {
-    font-family: "audiowide", cursive;
-    border-radius: 50%;
-    font-size: 4rem;
+footer {
+    position: relative;
+    text-align: center; /* Center the footer text */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a background color */
+    margin-top: auto; /* Push footer to the bottom */
 }
 
 /**this is the css for the collaborator's section in About Us page */
@@ -67,19 +96,20 @@ header  {
     cursor: pointer;
 }
 .team-member img {
-    
     width: 100%;
     height: auto;
-    border-radius : 50%;
-    width : 150px;  
-    height : 150px; 
-    object-fit : cover;
+    border-radius: 50%;
+    width: 150px;  
+    height: 150px; 
+    object-fit: cover;
+    filter: sepia(60%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* Added shadow in your theme color */
 }
 
 .profile-card {
-    background: #000000;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 5px;
 }
 
 
@@ -94,9 +124,10 @@ header  {
 }
 .button-container {
     display: flex;
+    justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 30px;
 }
 
 /**this is the css for the 'the making' section in About Us page */
@@ -106,15 +137,16 @@ header  {
     font-family: "audiowide", cursive;
     border-radius: 5px;
     border: solid 1px hsl(46, 79%, 45%);;
-    background-color: #000000;
+    min-width: 140px;
+    background-color: rgb(255, 255, 255, 0.9);
     margin: 20px;
-    color: hsl(46, 79%, 45%);;
+    color: hsl(36, 87%, 49%);;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .info-button:hover {
-    background-color: #da7517d8;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /**modals */
@@ -132,7 +164,7 @@ header  {
 
 #infoModal .modal-content {
     background-color: #000;
-    color: #fff;
+    color: rgba(214, 139, 0, 0.9);
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -143,7 +175,7 @@ header  {
 }
 
 #infoModal .close-btn {
-    color: #aaa;
+    color:  rgba(214, 139, 0, 0.9);;
     float: right;
     font-size: 28px;
     font-weight: bold;
