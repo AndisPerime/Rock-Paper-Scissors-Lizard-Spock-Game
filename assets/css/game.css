@@ -158,3 +158,91 @@
     cursor: pointer;
     height: 35px;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .popup {
+        width: 95%;
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .choices {
+        gap: 15px;
+        height: auto;
+        flex-direction: column;
+        margin: 10px auto;
+    }
+
+    .choice-btn {
+        width: 70px;
+        height: 70px;
+        padding: 10px;
+    }
+
+    .choice-btn img {
+        width: 50px;
+        height: 35px;
+    }
+
+    #user-choice, #computer-choice {
+        width: 120px;
+        height: 120px;
+        padding: 15px;
+    }
+
+    #result {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    .controls {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    #difficulty-select, #reset-btn {
+        font-size: 0.9em;
+        padding: 6px 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .heading {
+        font-size: 1.5em;
+    }
+
+    .popup {
+        padding: 10px;
+    }
+
+    .choice-btn {
+        width: 60px;
+        height: 60px;
+        padding: 8px;
+    }
+
+    .choice-btn img {
+        width: 40px;
+        height: 30px;
+    }
+
+    #user-choice, #computer-choice {
+        width: 100px;
+        height: 100px;
+        padding: 12px;
+    }
+
+    .scoreboard {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        font-size: 0.9em;
+    }
+
+    #difficulty-select, #reset-btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
