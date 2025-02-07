@@ -71,10 +71,6 @@ The team framework was chosen, with a Scrum Master appointed to facilitate agile
 
 ### Creation Process
 
-
-
-
-
 ### Strategy
 
 - We need a website that is friendly and inviting to all ages.
@@ -129,6 +125,18 @@ The team framework was chosen, with a Scrum Master appointed to facilitate agile
  **game-window.html**
 
  ![The Game page wireframe](/assets/images/WIRE_game.PNG "The Game page wireframe")
+
+
+
+
+
+ ## Deployed Website
+
+  **Respnsive design through different platforms**
+
+ ![The Game page wireframe](/assets/images/SCREEN%20RESPONSIVENESS.png "The Game page wireframe")
+
+
 
  
 
@@ -235,6 +243,31 @@ During the development of this project, we utilized AI tools (specifically GitHu
 - Leveraged AI for debugging and code optimization
 - Maintained creative control while using AI as a supportive tool
 - Carefully reviewed and modified AI suggestions to ensure code quality and functionality
+
+
+## **Testing**
+
+**Manual Testing**
+
+Throughout the development process, the website was rigorously tested manually. Each feature was checked for functionality, and any issues encountered were promptly debugged. This included ensuring that all links worked correctly, forms submitted data as expected, and the layout was consistent across different screen sizes. Specific attention was given to resolving issues such as content overflow and ensuring that interactive elements were responsive.
+
+**W3C Validation**
+
+The HTML and CSS code were validated using the W3C Markup Validation Service and W3C CSS Validation Service, respectively. This helped identify and correct any syntax errors, ensuring that the code adhered to web standards and best practices.
+
+**DevTools**
+
+Browser DevTools were extensively used to inspect and debug the website. This included checking the DOM structure, monitoring network requests, and analyzing performance. DevTools were also used to test the responsiveness of the design by simulating different device screen sizes and orientations.
+
+**Lighthouse**
+
+Google Lighthouse was used to audit the website for performance, accessibility and best practices. The tool provided valuable insights and recommendations, which were implemented to improve the overall quality of the website. Key metrics such as load time, accessibility scores, and adherence to best practices were optimized based on Lighthouse reports.
+
+![Lighthouse index  page report ](/assets/images/index%20test.png "index  page report")
+
+![Lighthouse game  page report ](/assets/images/game%20test.png "game  page report")
+
+![Lighthouse game  page report ](/assets/images/about%20us%20test.png "game  page report")
 
 
 
